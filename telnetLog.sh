@@ -13,10 +13,9 @@ currDate=`date +"%Y-%m-%d"`
 #create dir for logs
 mkdir -p  "${currDate}"
 
-ip=$1
-comment=$2
+
 if [ "$#" -eq 2 ]; then #check existence of second arg and comment
-	
+
 	if [[ $1 =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then #check if first arg is ip
 		#set ip and comment variable		
 		ip=$1
